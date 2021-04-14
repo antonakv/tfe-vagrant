@@ -6,5 +6,8 @@ Vagrant.configure("2") do |config|
     v.memory = 1024 * 8
     v.cpus = 2
   end
+  config.vm.provision "file", source: "license.rli", destination: "$HOME/license.rli"
+  config.vm.provision "file", source: "configs/replicated.conf", destination: "$HOME/replicated.conf"
+  config.vm.provision "file", source: "configs/settings.json", destination: "$HOME/settings.json"
+  config.vm.provision "shell", path: "scripts/setup-tfe.sh"
 end
-
