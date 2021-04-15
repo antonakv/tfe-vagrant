@@ -2,7 +2,8 @@
 
 ## Intro
 
-This manual is dedicated to install Terraform Enterprise with online installation type using Vagrant
+This manual is dedicated to install Terraform Enterprise with online installation type using Vagrant.
+
 Tested on Mac OS X.
 
 ## Requirements
