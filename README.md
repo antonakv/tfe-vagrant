@@ -146,23 +146,23 @@ Tested in Google Chrome
 
 - Click ```Proceed to 192.168.56.33.xip.io (unsafe)```
   
-  ![Proceed to 192.168.56.33.xip.io]
-  (https://github.com/antonakv/tfe-vagrant/images/tfe-vagrant-4.jpg)
+ ![Proceed to 192.168.56.33.xip.io]
+ (https://github.com/antonakv/tfe-vagrant/raw/main/images/tfe-vagrant-4.png)
 
 - Enter password ```Password1#``` and click ```Unlock```
 
  ![Unlock]
- (https://github.com/antonakv/tfe-vagrant/images/tfe-vagrant-2.jpg)
+ (https://github.com/antonakv/tfe-vagrant/raw/main/images/tfe-vagrant-2.png)
 
 - On page with title ```HTTPS for admin console``` enter to field called ```Hostname``` following value ```192.168.56.33.xip.io```
 
  ![HTTPS for admin console]
- (https://github.com/antonakv/tfe-vagrant/images/tfe-vagrant-3.jpg)
+ (https://github.com/antonakv/tfe-vagrant/raw/main/images/tfe-vagrant-3.png)
 
 - Click ```Use Self-Signed Cert```
 
   ![Proceed to 192.168.56.33.xip.io]
-  (https://github.com/antonakv/tfe-vagrant/images/tfe-vagrant-4.jpg)
+  (https://github.com/antonakv/tfe-vagrant/raw/main/images/tfe-vagrant-4.png)
 
 - Click ```Advanced```
 
@@ -171,5 +171,5 @@ Tested in Google Chrome
 - Open URL https://192.168.56.33.xip.io:8800/dashboard
 
   ![Dashboard]
-  (https://github.com/antonakv/tfe-vagrant/images/tfe-vagrant-7.jpg)
+  (https://github.com/antonakv/tfe-vagrant/raw/main/images/tfe-vagrant-7.png)
 
