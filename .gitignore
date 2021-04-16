@@ -4,6 +4,7 @@ priv/
 vendor/
 .vagrant/
 .kitchen/
+.srl/
 *.box
 *.iso
 *.env
