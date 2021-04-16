@@ -9,6 +9,9 @@ vendor/
 *.env
 *.ova
 *.rli
+*.crt
+*.csr
+*.key
 
 .terraform
 *.tfstate*
