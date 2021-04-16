@@ -48,7 +48,41 @@ folder tfe-vagrant created on the previous step and rename it to license.rli
 
 ## Provisioning
 
-- In the same folder you were before run 
+- To generate self signed certificate in the same folder you were before run: 
+```bash
+./self-signed-local-gen.sh
+```
+
+Sample result
+```bash
+$ ./self-signed-local-gen.sh 
+# Self signed certificate generation
+Generating RSA private key, 4096 bit long modulus
+..........................................................................................................................++
+...................................................................................++
+e is 65537 (0x10001)
+Generating a 2048 bit RSA private key
+.+++
+..+++
+writing new private key to '192.168.56.33.xip.io.key'
+-----
+Signature ok
+subject=/C=NL/L=AMS/O=HC/CN=192.168.56.33.xip.io
+Getting CA Private Key
+# Adding self signed root certificate to Mac OS X Keychain Access
+```
+
+ ![Mac OS X Keychain Access](https://github.com/antonakv/tfe-vagrant/raw/main/images/tfe-vagrant-8.png)
+
+ - Click on imported certificate in Mac OS X Keychain Access list and change value When using this certificate to Always trust
+
+ Sample result
+
+  ![Always trust](https://github.com/antonakv/tfe-vagrant/raw/main/images/tfe-vagrant-9.png)
+
+  ![Always trust 2](https://github.com/antonakv/tfe-vagrant/raw/main/images/tfe-vagrant-10.png)
+
+- In the same folder you were before run: 
 
 ```bash
 vagrant up
@@ -142,27 +176,9 @@ Tested in Google Chrome
 
 - In your browser open URL https://192.168.56.33.xip.io:8800/
 
-- Click ```Advanced```
-
-- Click ```Proceed to 192.168.56.33.xip.io (unsafe)```
-  
- ![Proceed to 192.168.56.33.xip.io](https://github.com/antonakv/tfe-vagrant/raw/main/images/tfe-vagrant-4.png)
-
 - Enter password ```Password1#``` and click ```Unlock```
 
  ![Unlock](https://github.com/antonakv/tfe-vagrant/raw/main/images/tfe-vagrant-2.png)
-
-- On page with title ```HTTPS for admin console``` enter to field called ```Hostname``` following value ```192.168.56.33.xip.io```
-
- ![HTTPS for admin console](https://github.com/antonakv/tfe-vagrant/raw/main/images/tfe-vagrant-3.png)
-
-- Click ```Use Self-Signed Cert```
-
-  ![Proceed to 192.168.56.33.xip.io](https://github.com/antonakv/tfe-vagrant/raw/main/images/tfe-vagrant-4.png)
-
-- Click ```Advanced```
-
-- Click ```Proceed to 192.168.56.33.xip.io (unsafe)```
 
 - Open URL https://192.168.56.33.xip.io:8800/dashboard
 
