@@ -13,3 +13,5 @@ EOF
 )
 rm 192.168.56.33.xip.io.csr
 rm tfe-vagrant-rootCA-$now.key
+echo "# Adding self signed root certificate to Mac OS X Keychain Access"
+open tfe-vagrant-rootCA-$now.crt
