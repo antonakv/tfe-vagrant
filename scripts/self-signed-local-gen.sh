@@ -1,6 +1,17 @@
 #!/usr/bin/env bash
+
 echo "# Self signed certificate generation"
+
 now=$(date +"%H%M-%m_%d_%Y")
+
+[ -f ~/.rnd ] || {
+  cd ~/ 
+  openssl rand -writerand .rnd
+}
+
+mkdir -p /vagrant/cert
+cd /vagrant/cert
+
 openssl genrsa -passout pass:foobar -aes256 -out tfe-vagrant-rootCA-$now.key 4096
 openssl req -passin pass:foobar -x509 -new -nodes -key tfe-vagrant-rootCA-$now.key -sha256 -days 365 -out tfe-vagrant-rootCA-$now.crt -subj "/C=NL/L=AMS/O=HC/CN=192.168.56.33.xip.io"
 openssl req -new -nodes -keyout 192.168.56.33.xip.io.key -out 192.168.56.33.xip.io.csr -days 365 -subj "/C=NL/L=AMS/O=HC/CN=192.168.56.33.xip.io"
@@ -11,7 +22,6 @@ cat <<-EOF
 subjectAltName = DNS:192.168.56.33.xip.io
 EOF
 )
+
 rm 192.168.56.33.xip.io.csr
 rm tfe-vagrant-rootCA-$now.key
-echo "# Adding self signed root certificate to Mac OS X Keychain Access"
-open tfe-vagrant-rootCA-$now.crt
