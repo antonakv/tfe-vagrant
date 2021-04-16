@@ -13,6 +13,7 @@ vendor/
 *.crt
 *.csr
 *.key
+*.srl
 
 .terraform
 *.tfstate*
