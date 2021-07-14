@@ -53,7 +53,7 @@
         "value": "0"
     },
     "hostname": {
-        "value": "192.168.56.33.xip.io"
+        "value": "192.168.56.33.nip.io"
     },
     "iact_subnet_list": {},
     "iact_subnet_time_limit": {

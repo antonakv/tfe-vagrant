@@ -140,18 +140,18 @@ Bringing machine 'default' up with 'virtualbox' provider...
 
 Tested in Google Chrome
 
-- In your browser open URL https://192.168.56.33.xip.io:8800/
+- In your browser open URL https://192.168.56.33.nip.io:8800/
 
 - Click ```Advanced```
 
-- Click ```Proceed to 192.168.56.33.xip.io (unsafe)```
+- Click ```Proceed to 192.168.56.33.nip.io (unsafe)```
   
- ![Proceed to 192.168.56.33.xip.io](https://github.com/antonakv/tfe-vagrant/raw/main/images/tfe-vagrant-4.png)
+ ![Proceed to 192.168.56.33.nip.io](https://github.com/antonakv/tfe-vagrant/raw/main/images/tfe-vagrant-4.png)
 
 - Enter password ```Password1#``` and click ```Unlock```
 
  ![Unlock](https://github.com/antonakv/tfe-vagrant/raw/main/images/tfe-vagrant-2.png)
 
-- Open URL https://192.168.56.33.xip.io:8800/dashboard
+- Open URL https://192.168.56.33.nip.io:8800/dashboard
 
   ![Dashboard](https://github.com/antonakv/tfe-vagrant/raw/main/images/tfe-vagrant-7.png)
