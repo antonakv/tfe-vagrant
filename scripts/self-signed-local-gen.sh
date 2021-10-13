@@ -11,6 +11,7 @@ now=$(date +"%H%M-%m_%d_%Y")
 
 mkdir -p /vagrant/cert
 cd /vagrant/cert
+rm -Rf /vagrant/cert/*
 
 openssl genrsa -passout pass:foobar -aes256 -out tfe-vagrant-rootCA-$now.key 4096
 openssl req -passin pass:foobar -x509 -new -nodes -key tfe-vagrant-rootCA-$now.key -sha256 -days 365 -out tfe-vagrant-rootCA-$now.crt -subj "/C=NL/L=AMS/O=HC/CN=192.168.56.33.nip.io"
