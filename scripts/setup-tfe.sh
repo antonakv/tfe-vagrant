@@ -17,6 +17,7 @@ cp /vagrant/cert/192.168.56.33.nip.io.key /home/ubuntu/install
 cp /vagrant/license.rli /home/ubuntu/install
 cp /vagrant/configs/settings.json /home/ubuntu/install
 chown -R ubuntu: /home/ubuntu/install
+mkdir -p /home/vagrant/md
 
 if [ -f /vagrant/license.rli ]  ; then
   echo "# Running installation script"
