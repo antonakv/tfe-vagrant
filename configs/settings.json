@@ -21,7 +21,9 @@
     "custom_image_tag": {
         "value": "hashicorp/build-worker:now"
     },
-    "disk_path": {},
+    "disk_path": {
+        "value": "/home/vagrant/md"
+    },
     "enable_active_active": {
         "value": "0"
     },
